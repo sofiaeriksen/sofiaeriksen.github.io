@@ -125,13 +125,12 @@
   
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px"></div>
-
-  <!-- Research Section -->
-  <div class="w3-container w3-padding-32" id="research">
+<!-- Research Section -->
+<div class="w3-container w3-padding-32" id="research">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align: center;">Research</h3>
-    <p style="text-align: justify; margin-left: 200px; margin-right: 200px;">Supervised by <a href="https://elspethr.github.io" target="_blank">Dr. Elspeth Ready</a>.</p>
+    <p style="text-align: justify; margin-left: 10%; margin-right: 10%;">Supervised by <a href="https://elspethr.github.io" target="_blank">Dr. Elspeth Ready</a>.</p>
   </div>
-
+  
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="figures/ulu_sum24.jpg" alt="Ulukhkatok in summer" width="1500" height="800">
     <div class="w3-display-middle w3-margin-top w3-center"></div>
@@ -144,9 +143,46 @@
         <i class="fab fa-orcid" style="font-size: 18px; margin-right: 8px;"></i>ORCID: 0009-0006-1481-9932
       </a>
     </p>
-    <p style= "margin-left: 200px; margin-right: 200px;" > </p>
-  </div>  
+    <p style="margin-left: 10%; margin-right: 10%;"> </p>
+  </div>
   
+  <!-- Add your CSS for responsive design -->
+  <style>
+    /* Base styles for sections */
+    .w3-container {
+      display: block; /* Default block layout */
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .w3-container p {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  
+    /* Responsive design for smaller screens (phones, tablets) */
+    @media (max-width: 768px) {
+      .w3-container p {
+        margin-left: 5%;  /* Smaller margins for smaller screens */
+        margin-right: 5%; 
+      }
+      .w3-padding-32 {
+        padding-left: 10px; 
+        padding-right: 10px;
+      }
+    }
+    /* Adjust margins for very small screens (phones) */
+    @media (max-width: 480px) {
+      .w3-container p {
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+      .w3-padding-32 {
+        padding-left: 8px; 
+        padding-right: 8px;
+      }
+    }
+  </style>
+
 <!-- Image of location -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="figures/ulu_fishnets.jpg" alt="Fishnets drying" width="1500" height="800">
