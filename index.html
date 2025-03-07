@@ -1,19 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-<title>Sofia Eriksen</title>
+    <title>Sofia Eriksen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="w3.css">
+
+    <!-- Self-hosting Helvetica Neue font -->
+    <style>
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url('fonts/HelveticaNeue-Regular.woff2') format('woff2'),
+                 url('fonts/HelveticaNeue-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url('fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+                 url('fonts/HelveticaNeue-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Apply Helvetica Neue font globally */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 20px; /* Consistent margin between headings and paragraphs */
+        }
+
+        /* Navbar styling */
+        .w3-bar {
+            margin-bottom: 20px; /* Adjust spacing below navbar */
+        }
+
+        /* Add more spacing to the sections */
+        .w3-container {
+            margin-bottom: 40px; /* Ensure enough spacing between sections */
+        }
+
+        .w3-row {
+            margin-top: 20px; /* Adjust margin between row elements */
+        }
+
+        /* Adjust spacing between text and social icons */
+        .w3-col.l6.m6.s12 {
+            margin-bottom: 20px;
+        }
+
+        .w3-display-container img {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Ensure consistent spacing on headings */
+        h3 {
+            margin-bottom: 20px;
+            letter-spacing: normal; /* Fix letter-spacing inconsistency */
+        }
+
+        /* Fix letter-spacing issues in paragraphs */
+        .w3-container p {
+            margin-top: 10px; /* Adjust vertical spacing between title and paragraph */
+            letter-spacing: normal; /* Fix individual letter-spacing */
+        }
+    </style>
 </head>
 <body>
 
-    <h2>My Webpage</h2>
-
-<p>Here is the body of my webpage.</p>
-
-<div>
-    <img src="figures/bannockhotdog.jpg" style="width: 200px;" alt="Photo of Sofia eating a bannock hotdog in Ulukhaktok">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Sofia Eriksen</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#research" class="w3-bar-item w3-button">Research</a>
+      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
+    </div>
+  </div>
 </div>
- <p> <a href="CVSE.pdf"> My CV</a></p>   
-</body>
 
+<!-- Header Section with Flexbox -->
+<div class="w3-container w3-padding-64">
+    <div class="w3-row w3-center w3-content" style="display: flex; align-items: center; justify-content: space-between; max-width: 1000px;">
+  
+      <!-- Left Column: Text and Icons -->
+      <div class="w3-col l6 m6 s12" style="text-align: center; padding-right: 10px;">
+        <h1>SOFIA ERIKSEN</h1>
+        <p class="w3-opacity" style="font-size: 18px;">DOCTORAL STUDENT</p>
+        <p class="w3-col l6 m6 s12" style="font-size: 14px;">
+            <a href="https://www.eva.mpg.de/ecology/staff/sofia-eriksen/" target="_blank">Max Planck Institute for Evolutionary Anthropology</a>
+        </p>        
+        <p><a href="CVSE.pdf" class="w3-button w3-light-grey w3-round">Curriculum Vitae</a></p>
+  
+        <!-- Social Icons -->
+        <div style="margin-top: 10px;">
+          <a href="mailto:sofia.eriksen@gmail.com" target="_blank">
+            <i class="fas fa-envelope" style="font-size: 26px; color: #007bff; margin-right: 15px;"></i>
+          </a>
+          <a href="https://github.com/sofiaeriksen" target="_blank">
+            <i class="fab fa-github" style="font-size: 26px; color: #333; margin-right: 15px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sofia-louisa-munck-eriksen-29283614a/" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 26px; color: #0e76a8;"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Right Column: Profile Image (Square) -->
+      <div class="w3-col l6 m6 s12 w3-center">
+        <img src="figures/bannockhotdog.jpg" alt="Sofia Eriksen" 
+             style="width: 250px; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+  
+    </div>
+</div>  
+  
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px"></div>
+
+  <!-- Research Section -->
+  <div class="w3-container w3-padding-32" id="research">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align: center;">Research</h3>
+    <p style="text-align: justify; margin-left: 200px; margin-right: 200px;">Supervised by <a href="https://elspethr.github.io" target="_blank">Dr. Elspeth Ready</a>.</p>
+  </div>
+
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="figures/ulu_sum24.jpg" alt="Ulukhkatok in summer" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center"></div>
+
+  <!-- Publications Section -->
+  <div class="w3-container w3-padding-32" id="publications">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align: center;">Publications</h3>
+    <p style="text-align: center;">
+      <a href="https://orcid.org/0009-0006-1481-9932" target="_blank" style="font-size: 14px;">
+        <i class="fab fa-orcid" style="font-size: 18px; margin-right: 8px;"></i>ORCID: 0009-0006-1481-9932
+      </a>
+    </p>
+    <p style= "margin-left: 200px; margin-right: 200px;" > </p>
+  </div>  
+  
+<!-- Image of location -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="figures/ulu_fishnets.jpg" alt="Fishnets drying" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center"></div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16"></footer>
+
+</body>
 </html>
